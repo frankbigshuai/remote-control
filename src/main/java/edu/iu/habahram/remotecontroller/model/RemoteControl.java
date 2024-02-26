@@ -21,14 +21,22 @@ public class RemoteControl {
 		onCommands[slot] = onCommand;
 		offCommands[slot] = offCommand;
 	}
+
+
+	public void SetCommand(int slot, Command onCommand, Command offCommand)
+	{
+
+	}
+
+
  
 	public String onButtonWasPushed(int slot) {
-
 		return onCommands[slot].execute();
 	}
+
+
  
 	public String offButtonWasPushed(int slot) {
-
 		return offCommands[slot].execute();
 	}
 
